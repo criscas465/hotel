@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"><head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" th:action="@{/save}" th:object="${rooms}" method="post">
+Name:
+<input type="text" th:field="*{occupantname}"><br>
+Bedroom Type:
+<input type="text" th:field="*{bedtype}"/><br>
+Smoking:
+<input type="text" th:field="*{smoking}"/><br>
+
+<button type="submit">save</button>
+
+</form>
+</body>
+</html>

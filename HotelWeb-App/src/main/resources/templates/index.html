@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      <head>
+<meta charset="ISO-8859-1">
+<title>Hotel Application</title>
+</head>
+<body>
+<h1> Hotel Application </h1>
+<span th:text = "'Hello Welcome to, '+ ${HotelName}"></span>
+
+ </body>
+  <br>
+  <br>
+ <a href="/request_room"> click to add Reservation</a>
+  <br>
+  <br>
+  <a href="/cancel_room"> click to cancel Reservation</a>
+  <br>
+  <br>
+  <a href="/list_room"> click to show rooms</a>
+   <br>
+  <br>
+  <a href="/option"> click to more options</a>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      <head>
+<meta charset="ISO-8859-1">
+<title>List of Rooms</title>
+</head>
+<body>
+    <h1 align="center"> Room List</h1>
+    <br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Room Number</th>
+                <th>Bed Type</th>
+                <th>Occupant Name</th>
+                <th>Occupied</th>
+                <th>Rate</th>
+                <th>Smoking</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each="room:${room}">
+            <td th:text="${room.roomnum}"> Room Number</td>
+        	<td th:text="${room.bedtype}"> Bed Type</td>
+        	<td th:text="${room.occupantname}"> Occupant Name</td>
+        	<td th:text="${room.occupied}"> Occupied</td>
+        	<td th:text="${room.rate}"> Rate</td>
+        	<td th:text="${room.smoking}"> Smoking</td>
+        	
+        </tr>
+        </tbody>
+        </table>
+<a href="/"> click here to main page</a>
+</body>
+  
+</html>
